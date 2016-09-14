@@ -23,3 +23,5 @@
 
 #my pdfs
 draft/*.pdf
+*.rtf
+*.xdv
