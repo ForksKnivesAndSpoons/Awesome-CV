@@ -1,0 +1,111 @@
+\input{info/info.tex}
+\geometry{left=1.4cm, top=1.4cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Fox Talent Acquisition Team}
+  {Fox Networks Engineering \& Operations}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer Summer Internship}
+% How the letter is opened
+\letteropening{Dear Talent Acquisition Team,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Resume}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Jean C. Pe\~na~~~·~~~Cover Letter}
+  {Attached: Resume}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+I am a Computer Science student at The City College of New York with a minor
+in Psychology. I am interested in machine learning, penetration testing, video
+game design, and education. I am currently learning about penetration testing
+tools during my free time using Kali Linux. I am knowledgeable in C++, C\#,
+Java, JavaScript, JQuery, HTML5, and CSS. Python is a new language that I am
+becoming comfortable with.
+%I've used VHDL in my Computer Organization course,
+%Scheme in my current Programming Language Paradigms class, and Django for a
+%project for Software Engineering last semester. I think LaTeX is amazing and I
+%am currently transitioning from office tools to LaTeX.
+\par
+For Software Engineering, I worked in a group on an ebook sharing platform. My
+team decided that Django was great for rapid prototyping, so we focused our
+efforts with the Django framework and called our platform "EBShare".
+For me, this was a completely new experience because it was the first time 
+I have ever done anything with Python. Our platform was a website that was
+designed using Bootstrap and all of the pages were rendered by Django.
+\par
+A current project that I am working on with the ACM club is a vertical
+scrolling shoot em' up called Chapel Fighter. This is primarily written in
+JavaScript. My small team is using Phaser because it is a great framework for
+designing 2D games. Currently, the best experience is available on a PC's
+web browser, although the game can be previewed on a mobile browser.
+\par
+A few of my projects use RESTful APIs such as NYC Open
+Data(Socrata), Parse.com, Twilio, Clarifai, and Giphy. Recently, I attended
+HackNY, a hackathon at New York University and used Twilio, Clarifai, and
+Giphy with 3 other developers and created a phone menu system called SMSstuff,
+primarily with Twilio. To make our project a little more interesting, we added
+some Easter Eggs in a couple of menu paths. One of them grabbed a randomly
+generated gif from Giphy and started a guessing game which asked the user to
+guess any of the tags that Clarifai assigned to the gif.
+
+\lettersection{Why Fox?}
+At the NSBE career fair, I was given the impression that Fox is a top
+competitor in many areas. It's a top competitor in sports and prime time
+entertainment and has shown persistence and succeeded where other people had
+doubted them. For example, prime time cartoons didn't seem plausible to
+everyone else, and yet Fox has The Simpsons and Family Guy. (paraphrasing a
+recruiter)
+\par
+Some of the things that are important to me in the work place include working
+with and learning from intelligent people, continuous learning, networking,
+solving important problems, becoming valuable to the company, and getting
+educational support. I think these are things that would be fulfilled at Fox.
+
+\lettersection{Why Me?}
+I'm a great person to work with. I'm independent and a great team player. I'm always
+looking for a way to learn, as my values show. I already have a great set of
+skills that match up with the requirements, making me competent and
+realistically capable of providing software solutions to meet Fox's needs. I'm
+also looking to expand the number of frameworks that I use with
+JavaScript. In a nutshell, I'm ready to hit the ground running and help exceed
+Fox's expectations for success.
+\par
+I'm excited to learn more about the Software Engineer Summer Internship and
+share how I would be a good fit for Fox. I hope to hear from you soon.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
