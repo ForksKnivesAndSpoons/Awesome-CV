@@ -17,17 +17,22 @@
 \ProvidesClass{stuff-awesome-cv}[2016/09/14 v1.5s Awesome Curriculum Vitae Class mod]
 \NeedsTeXFormat{LaTeX2e}
 
+% Inherit options of article
+\DeclareOption*{%
+  \PassOptionsToClass{\CurrentOption}{article}
+}
+\ProcessOptions\relax
 \LoadClass{awesome-cv}
 
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} \textbf{#1}}}
-\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.3em}\bodyfontlight\upshape\color{graytext}}
+\renewcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} \textbf{#1}}}
+\renewcommand*{\lettertextstyle}{\fontsize{10pt}{1.3em}\bodyfontlight\upshape\color{graytext}}
 
 %-------------------------------------------------------------------------------
 %                Modified commands for elements of CV structure
 %-------------------------------------------------------------------------------
 % Define a header for CV
 % Usage: \makecvheader
-\newcommand*{\makecvheader}{%
+\renewcommand*{\makecvheader}{%
   \begin{center}
     \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
     \\[\acvHeaderAfterNameSkip]%
@@ -110,7 +115,7 @@
 }
 
 % Define an environment for cvskill
-\newenvironment{cvskills}{%
+\renewenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}
   %\vspace{-2.0mm}
   \vspace{-4.0mm}
@@ -125,7 +130,7 @@
 
 % Define a section for the cover letter
 % Usage: \lettersection{<section-title>}
-\newcommand{\lettersection}[1]{%
+\renewcommand{\lettersection}[1]{%
   \vspace{\acvSectionTopSkip} %added
   %\par\addvspace{2.5ex}
   \phantomsection{}
@@ -136,7 +141,7 @@
 
 % Define a title of the cover letter
 % Usage: \makelettertitle
-\newcommand*{\makelettertitle}{%
+\renewcommand*{\makelettertitle}{%
   %\vspace{8.4mm}
   \vspace{4.4mm}
   \setlength\tabcolsep{0pt}
