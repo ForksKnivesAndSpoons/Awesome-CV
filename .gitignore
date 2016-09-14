@@ -22,6 +22,6 @@
 *.DS_Store
 
 #my pdfs
-draft/*.pdf
+stuff/*.pdf
 *.rtf
 *.xdv
