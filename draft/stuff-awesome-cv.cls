@@ -1,0 +1,1 @@
+../stuff-awesome-cv.cls
